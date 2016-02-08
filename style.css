@@ -1,0 +1,55 @@
+body {
+  background-color: #eeeeee;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.sheet {
+  background-color: white;
+  height: 751px;
+  width: 512px;
+  margin: 4px auto 47px;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(46,46,46,0.29);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(46,46,46,0.29);
+  box-shadow: 1px 1px 2px 1px rgba(46,46,46,0.29);
+}
+
+.name {
+  height: 74px;
+  text-align: center;
+}
+
+h2 {
+  margin: 0px;
+  padding-top: 46px;
+}
+
+.photo {
+  border-radius: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 139px;
+  height: 143px;
+}
+
+hr {
+  color: #7a7a7a;
+  margin: 20px auto;
+  width: 413px;
+}
+
+.text {
+  padding-left: 64px;
+}
+
+li {
+  margin-left: 74px;
+}
+
+.black_line {
+  background-color: black;
+  height: 4px;
+  width: 100%;
+  margin: auto 0px 0px;
+  padding: 0px;
+}
