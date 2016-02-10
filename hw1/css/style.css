@@ -1,0 +1,54 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #eeeeee;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.sheet {
+  background-color: white;
+  height: 750px;
+  width: 400px;
+  margin: 4px auto 47px;
+  padding: 0px 60px 0px 60px;
+}
+
+.header {
+  height: 220px;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 10px;
+}
+
+p {
+text-align: left;
+padding-left: 10px;
+}
+
+img {
+  width: 135px;
+  height: 135px;
+  margin-top: 15px;
+}
+
+.text {
+  padding: 20px 10px 10px;
+  border-top: 1px solid grey;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin: 10px auto 20px;;
+}
+
+li {
+  margin-left: 40px;
+}
+
+.phone {
+  margin-bottom: 30px;
+}
