@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background-color: #f9f9f9;
+	font-family: sans-serif, monospace;
+}
+
+.wrapper {
+	background-color: white;
+	height: 1000px;
+	margin: 0 auto;
+	width: 1060px;
+}
+
+div.header {
+	margin-left: 45px;
+	margin-right: 45px;
+}
+
+img.logo {
+	margin-top: 50px;
+}
+
+.menu-wrapper {
+	background: url("../img/bg.jpg") repeat-x;
+	margin-top: 40px;
+}
+
+.main-menu  li{
+	margin: auto 0px;
+	display: inline-block;
+	font-size: 11pt;
+	height: 40px;
+	line-height: 40px;
+	text-align:center;
+	width: 120px;
+}
+
+.main-menu  li:hover {
+	background: url("../img/bg_hover.jpg") repeat-x;
+	border-left: 1px solid #838383;
+	border-right: 1px solid #838383;
+	width: 118px;
+}
+
+.main-menu li a {
+	color: white;
+	text-shadow: 1px 1px 2px #000000;
+}
+
+.container {
+    margin-right: 45px;
+}
+
+.left-menu-wrapper {
+	margin-left: 45px;
+	font-size: 10pt;
+	width: 240px;
+	float: left;
+}
+
+.left-menu {
+	border: 1px solid #cccccc;
+	list-style-type: none;
+    width: 240px;
+}
+
+.left-menu li {
+	border-bottom: 1px solid #cccccc;
+	line-height: 40px;
+}
+
+.left-menu li a:hover {
+	font-weight: bold;
+	margin-left: 35px;
+}
+
+.left-menu li:last-child {
+    border-style: none;
+}
+
+.left-menu li a {
+	margin-left: 24px;
+	color: #666666;
+}
+
+.content {
+	width: 780px;
+	padding-left: 335px;
+}
+
+.content-image {
+	border: 1px solid #cccccc;	
+	margin-top: 40px;
+	margin-right: 200px;
+	display: block;
+}
+
+.text {
+	margin-left: 25px;
+	height: 240px;
+	width: 630px;
+	margin-top: 40px;
+	color: #333333;
+	font-size: 10pt;
+	line-height: 16pt;
+}
+
+.footer {
+	height: 40px;
+	margin-left: 45px;
+    width: 966px;
+	background-color: #cccccc;
+	margin-bottom: 60px;
+	margin-right: 45px;
+	font-size: 10pt;
+}
+
+.footer-menu li {
+	display: inline-block;
+	margin: auto 0px;
+	line-height: 40px;
+	width: 120px;
+	text-align:center;
+}
+
+.footer-menu li a {
+	color: #333333;
+}
+
+.footer-menu li:last-child {
+	display: block;
+	float: right;
+	margin-right: 25px;
+	color: #333333;
+	width: 173px;
+}
