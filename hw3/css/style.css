@@ -5,6 +5,7 @@
 
 a {
 	text-decoration: none;
+	text-transform: capitalize;/*all links will start with capital letters*/
 }
 
 body {
@@ -133,6 +134,10 @@ img.logo {
 
 .footer-menu li a {
 	color: #333333;
+}
+
+.footer-menu li a:hover {
+	text-decoration: underline;/*hover links will be underlined in the footer menu*/
 }
 
 .footer-menu li:last-child {
