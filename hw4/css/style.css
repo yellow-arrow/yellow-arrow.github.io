@@ -8,6 +8,9 @@ body {
 	position: relative;
 	background-color: white;
 	height: 100%;
+	box-shadow: 6px 0 4px -4px grey , -6px 0 4px -4px grey; 
+	-moz-box-shadow: 6px 0 4px -4px grey, -6px 0 4px -4px grey; 
+	-webkit-box-shadow: 6px 0 4px -4px grey, -6px 0 4px -4px grey;
 }
 
 .header {
@@ -136,7 +139,7 @@ line-height: 15px;
 
 .content-box {
 	width: 1000px;
-	float: left;
+	overflow: hidden;
 	border-bottom: 3px solid black;
 	background-color: white;
 }
@@ -145,26 +148,26 @@ line-height: 15px;
 	width: 210px;
 	float: left;
 	background-color: #edeef0;
-	position: absolute;
 	height: 100%;
+	border-right: 1px solid #c7cacf;
+	padding-bottom: 2000px;
+	margin-bottom: -2000px;
 }
 
 .content {
-	display: block;
-	position: absolute;
-	left: 210px;
-	width: 580px;
-	float: right;
-	border-left: 1px solid #c7cacf;
-	border-right: 1px solid #c7cacf;
-	height: 100%;
+	display: inline-block;
+	width: 578px;
+}
+
+.content p {
+	padding: 10px 15px;
 }
 
 .news {
 	width: 210px;
 	float: right;
 	background-color: #edeef0;
-	position: relativee;
+	border-left: 1px solid #c7cacf;
 }
 
 .news p,
