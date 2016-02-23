@@ -28,7 +28,6 @@ a:active {
 	min-height: 36px;
 	min-width: 100%;
 	background-color: blue;
-	margin: 0 auto;
 }
 
 ul.menu {
@@ -37,24 +36,19 @@ ul.menu {
 	border-right: 1px solid #56a2dc;
 }
 
-ul.menu  li {
+ul.menu  li  {
 	display: inline-block;
-	line-height: 32px;
-	vertical-align: center;
 	height: 36px;
-	padding-left: 10px;
-	padding-right: 10px;
-	font-size: 14px;
+	width: 70px;
 	text-align: center;
 }
 
-ul{
-  float: right;
-  margin: 0 10px 0 5px;
+.menu  li:first-child  {
+	width: 120px;
 }
 
-ul.menu li:last-child {
-	
+ul {
+  float: right;
 }
 
 .menu li a {
@@ -71,18 +65,6 @@ ul.menu li:last-child {
 ul.menu2 li a img{
 }
 
-ul.menu2 li:first-child {
-	margin-right: 0px;
-}
-
-ul.menu2 li a {
-	display: inline-block;
-	height: 32px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 0px;
-}
-
 ul.menu2 li a:hover{
   background: -moz-linear-gradient(rgb(66,153,210) 20%, rgb(0,115,190));
   background: -webkit-linear-gradient(rgb(66,153,210) 20%, rgb(0,115,190));
@@ -97,8 +79,20 @@ ul.menu2 li a:hover{
 
 ul.menu2 li {
 	display: inline-block;
-	padding-left: 15px;
-	padding-right: 15px;
+	text-align: center;
+}
+
+ul.menu2 li:first-child {
+	width: 160px;
+}
+
+ul.menu2 li:last-child {
+	width: 190px;
+}
+
+
+ul.menu2 li a {
+	width: 190px;
 }
 
 ul.menu2 {
@@ -116,9 +110,7 @@ ul.menu2 {
 .top {
 	width: 560px;
 	height: 62px;
-	background: rgba (0, 0, 0, 0.5);
-	background-color: black;
-	opacity: 0.6;
+	background: rgba(0,0,0,0.6);
 	color: white;
 	font-weight: 500;
 	font-family: Tahoma;
@@ -132,9 +124,7 @@ ul.menu2 {
 	width: 560px;
 	height: 561px;
 	margin-top: 2px;
-	background: rgba (0, 0, 0, 0.5);
-	background-color: black;
-	opacity: 0.6;
+	background: rgba(0,0,0,0.6);
 	padding-top: 1px;
 }
 
@@ -146,20 +136,24 @@ input#fb.fb-log-in  {/*кнопка лог-ин Фейсбук*/
 	display: block;
 	border: 0px solid rgb(56,80,140);
 	border-radius: 5px;
-	inherited: no;
 	cursor: pointer;
-	opacity: 1;
 }
 
 hr {
 	display: inline-block;
-	width: 125px;
-	color: black;
-	margin: auto;
+	width: 120px;
+	height: 0px;
+	border-bottom: 1px solid black;
+	border-top: 1px solid #666;
+	margin-bottom: 5px;
 }
 
-form {
-	width: 310px;
-	opacity: 1;
+div.ou {
+	padding-top: 32px;
+	color: #999;
+}
+
+.easylogin {
+	width: 276px;
 	margin: 0px auto;
 }
