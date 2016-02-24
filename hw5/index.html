@@ -26,16 +26,15 @@
 		Cadastre-se
 		</div><!--top-->
 		<div class='form-box'>
-		
 			<form class='easylogin' action='' method='POST'>
 				<input type='button' class='fb-log-in' id='fb' value=' '>
 			<div class='ou'><hr> OU <hr></div>
 			</form>
-			<form action='' method='POST'>	
-				<div>
-              <input type="text" id="first_name" placeholder="First Name" required="required" maxlength="30"/>
+			<form class='gaps' action='' method='POST'>
+			<div>
+            <input type="text" id="first_name" placeholder="First Name" required="required" maxlength="30"/>
             </div>
-            <div>
+			<div>
             <input type="text" id="last_name" placeholder="Last Name" required="required" maxlength="30"/>
             </div>
             <div>
@@ -47,15 +46,18 @@
             <div>
               <input type="password" id="p_confirm" placeholder="Password Confirm" required="required" maxlength="20"/>
             </div>
-            <div>
+            <div class='check'>
               <input type="checkbox" id="updates"/>
-              <label for="updates">Send me Youbike updates and tips</label>
+			  <label for="updates" name="send" class="css-checkbox">Send me Youbike updates and tips</label>
             </div>
-            <div>
-              <input type="submit" id="finish" value="Create my Account"/>
-            </div>
-			<p>By clicking the button above, you agree to the Terms of Service<br>Xiew our Privacy Policy.</p>
 			</form>
+			<form class='finish' action='' method='POST'>
+            <div class="create">
+              <input type="submit" value="Create my Account"/>
+            </div>
+			</form>
+			<p>By clicking the button above, you agree to the Terms of Service<br>Xiew our Privacy Policy.</p>
+			
 		</div><!--form-box-->
 	
 	</div><!--wrapper-->

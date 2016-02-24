@@ -1,10 +1,10 @@
-@font-fase{
-    font-family: 'Helvetica Neue';
-    src: url('../fonts/helveticaneuecyr-thin-webfont.eot');
-    src: url('../fonts/helveticaneuecyr-thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/helveticaneuecyr-thin-webfont.woff2') format('woff2'),
-         url('../fonts/helveticaneuecyr-thin-webfont.woff') format('woff'),
-         url('../fonts/helveticaneuecyr-thin-webfont.ttf') format('truetype');
+@font-face {
+    font-family: 'helvetica_neueregular';
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -12,6 +12,7 @@
 body {
 	background: url('../img/bg.jpg');
 	background-size: 100%;
+	font-family: 'helvetica_neueregular', 'Tahoma';
 }
 
 a,
@@ -19,7 +20,6 @@ a:hover,
 a:visited,
 a:active {
 	text-decoration: none;
-	color: white;
 	cursor: pointer;
 }
 
@@ -32,54 +32,55 @@ a:active {
 
 ul.menu {
 	position: absolute;
-	right: 372px;
+	right: 364px;
 	border-right: 1px solid #56a2dc;
 }
 
 ul.menu  li  {
 	display: inline-block;
-	height: 36px;
+	line-height: 36px;
 	width: 70px;
 	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 0px;
+}
+
+ul.menu  li  a {
+	color: #60b5ed;
 }
 
 .menu  li:first-child  {
-	width: 120px;
+	width: 110px;
 }
 
 ul {
   float: right;
 }
 
-.menu li a {
-	color: #60b5ed;
-	font-size: 14px;
-	font-weight: bold;
+.menu li:hover {
+	 background-color: #4eabda;
+	 color: #fff;
 }
 
-.menu li a:hover{
-  background-color: #4eabda;
-  color: #ffffff;
-}
-
-ul.menu2 li a img{
-}
-
-ul.menu2 li a:hover{
+ul.menu2 li:hover{
   background: -moz-linear-gradient(rgb(66,153,210) 20%, rgb(0,115,190));
   background: -webkit-linear-gradient(rgb(66,153,210) 20%, rgb(0,115,190));
   background: -o-linear-gradient(rgb(66,153,210) 20%, rgb(0,115,190));
   background: linear-gradient(rgb(66,153,210) 20%, rgb(0,115,190));
-  border-left: 1px;
-  border-right: 1px;
-  border-bottom: 1px;
-  border-style: solid;
-  border-color: rgb(66,153,210);
 }
 
 ul.menu2 li {
 	display: inline-block;
 	text-align: center;
+	line-height: 36px;
+	font-size: 14px;
+}
+
+ul.menu2 li img {
+	float: left;
+	margin-top: 5px;
+	margin-left: 12px;
 }
 
 ul.menu2 li:first-child {
@@ -90,9 +91,9 @@ ul.menu2 li:last-child {
 	width: 190px;
 }
 
-
 ul.menu2 li a {
 	width: 190px;
+	color: white;
 }
 
 ul.menu2 {
@@ -126,6 +127,7 @@ ul.menu2 {
 	margin-top: 2px;
 	background: rgba(0,0,0,0.6);
 	padding-top: 1px;
+	text-align: center;
 }
 
 input#fb.fb-log-in  {/*кнопка лог-ин Фейсбук*/
@@ -134,7 +136,7 @@ input#fb.fb-log-in  {/*кнопка лог-ин Фейсбук*/
 	height: 35px;
 	margin: 34px auto auto;
 	display: block;
-	border: 0px solid rgb(56,80,140);
+	border: 0 solid rgb(56,80,140);
 	border-radius: 5px;
 	cursor: pointer;
 }
@@ -142,7 +144,7 @@ input#fb.fb-log-in  {/*кнопка лог-ин Фейсбук*/
 hr {
 	display: inline-block;
 	width: 120px;
-	height: 0px;
+	height: 0;
 	border-bottom: 1px solid black;
 	border-top: 1px solid #666;
 	margin-bottom: 5px;
@@ -151,9 +153,65 @@ hr {
 div.ou {
 	padding-top: 32px;
 	color: #999;
+	font-size: 14px;
 }
 
 .easylogin {
 	width: 276px;
-	margin: 0px auto;
+	margin: 0 auto;
+}
+
+.gaps {
+	width: 276px;
+	margin: 8px auto 0;
+}
+
+.gaps div input {
+	margin-top: 18px;
+	width: 276px;
+	height: 35px;
+	box-sizing: border-box;
+	background-color: #100f0f;
+	border-bottom: 1px solid #666;
+	padding-left: 10px;
+	font-size: 14px;
+}
+
+.gaps div input[type='checkbox'] {
+	width: 12px;
+	height: 12px;
+}
+
+.check {
+	color: white;
+	font-size: 14px;
+	text-align: left;
+	font-family: 'Helvetica';
+}
+
+.finish div input[type="submit"] {
+	width: 150px;
+	height: 36px;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 14px;
+	color: white;
+	background: -moz-linear-gradient(rgb(66,153,210) 20%, rgb(0,115,190));
+	background: -webkit-linear-gradient(rgb(66,153,210) 20%, rgb(0,115,190));
+	background: -o-linear-gradient(rgb(66,153,210) 20%, rgb(0,115,190));
+	background: linear-gradient(rgb(66,153,210) 20%, rgb(0,115,190));
+	border: 0;
+	border-radius: 5px;
+}
+
+.create {
+	margin-top: 23px;
+}
+
+p {
+	color: white;
+	font-size: 11px;
+	padding-top: 15px;
+	line-height: 1.6;
+	font-family: 'Helvetica';
 }
