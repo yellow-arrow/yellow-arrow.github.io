@@ -215,7 +215,7 @@ div.ou {
 	margin-top: 23px;
 }
 
-.create:hover {
+.finish div input[type="submit"]:hover {
 	cursor: pointer;
 }
 
