@@ -17,6 +17,10 @@ table {
 	background-color: white;
 }
 
+tbody {
+	border: 1px solid black;
+}
+
 tr {
 	height: 34px;
 }
