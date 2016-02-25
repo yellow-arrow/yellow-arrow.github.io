@@ -20,7 +20,6 @@ a:hover,
 a:visited,
 a:active {
 	text-decoration: none;
-	cursor: pointer;
 }
 
 .top-menu {/*Верхнее меню с синим фоном*/
@@ -59,7 +58,7 @@ ul {
 
 .menu li:hover {
 	 background-color: #4eabda;
-	 
+	 cursor: pointer;
 }
 
 .menu li:hover a {
@@ -67,10 +66,11 @@ ul {
 }
 
 ul.menu2 li:hover{
-  background: -moz-linear-gradient(rgb(66,153,210) 20%, rgb(0,115,190));
-  background: -webkit-linear-gradient(rgb(66,153,210) 20%, rgb(0,115,190));
-  background: -o-linear-gradient(rgb(66,153,210) 20%, rgb(0,115,190));
-  background: linear-gradient(rgb(66,153,210) 20%, rgb(0,115,190));
+  	background: -moz-linear-gradient(rgb(66,153,210) 20%, rgb(0,115,190));
+	background: -webkit-linear-gradient(rgb(66,153,210) 20%, rgb(0,115,190));
+  	background: -o-linear-gradient(rgb(66,153,210) 20%, rgb(0,115,190));
+  	background: linear-gradient(rgb(66,153,210) 20%, rgb(0,115,190));
+	cursor: pointer;
 }
 
 ul.menu2 li {
@@ -213,6 +213,10 @@ div.ou {
 
 .create {
 	margin-top: 23px;
+}
+
+.create:hover {
+	cursor: pointer;
 }
 
 p {
