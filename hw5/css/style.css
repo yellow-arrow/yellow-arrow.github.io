@@ -43,7 +43,6 @@ ul.menu  li  {
 	text-align: center;
 	font-size: 14px;
 	font-weight: bold;
-	margin-left: 0px;
 }
 
 ul.menu  li  a {
@@ -60,7 +59,11 @@ ul {
 
 .menu li:hover {
 	 background-color: #4eabda;
-	 color: #fff;
+	 
+}
+
+.menu li:hover a {
+	color: #fff;
 }
 
 ul.menu2 li:hover{
@@ -172,14 +175,18 @@ div.ou {
 	height: 35px;
 	box-sizing: border-box;
 	background-color: #100f0f;
-	border-bottom: 1px solid #666;
-	padding-left: 10px;
+	border: 1px solid #666;
+	border-width: 0 0 1px 0;
+	padding-left: 20px;
 	font-size: 14px;
 }
 
 .gaps div input[type='checkbox'] {
 	width: 12px;
 	height: 12px;
+	margin-left: 0;
+	margin-bottom: 0;
+	vertical-align: bottom;
 }
 
 .check {
@@ -214,4 +221,12 @@ p {
 	padding-top: 15px;
 	line-height: 1.6;
 	font-family: 'Helvetica';
+}
+
+.gaps div input[type=text]:hover ,
+.gaps div input[type=email]:hover ,
+.gaps div input[type=password]:hover  {
+	background-color: #1b5288;
+	border-bottom: 1px solid #689bcc;
+	box-shadow: 0 0 10px #4a87af;
 }
