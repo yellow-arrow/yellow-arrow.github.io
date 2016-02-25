@@ -189,6 +189,11 @@ div.ou {
 	vertical-align: bottom;
 }
 
+.gaps div input[type='checkbox']:hover,
+.gaps div label[for='updates']:hover {
+	cursor: pointer;
+}
+
 .check {
 	color: white;
 	font-size: 14px;
@@ -209,6 +214,10 @@ div.ou {
 	background: linear-gradient(rgb(66,153,210) 20%, rgb(0,115,190));
 	border: 0;
 	border-radius: 5px;
+}
+
+.finish div input[type="submit"]:hover {
+	cursor: pointer;
 }
 
 .create {
