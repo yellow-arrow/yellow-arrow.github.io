@@ -2,6 +2,7 @@
 body {
 	font-family: 'Lucida Sans Unicode', Arial;
 }
+
 .wrapper {
 	width: 910px;
 	margin: 0 auto;
@@ -11,34 +12,23 @@ header {
 	padding-top: 1px;
 }
 
-.top {
-	margin: -1px 8px;
-	margin-bottom: 10px;
-}
-
 .contact {
-	margin-top: 20px;
+	margin: 20px 0 0 4px;
 	color: #5e696d;
 	font-size: 18px;
 	float: left;
 	font-family: Arial;
-	letter-spacing: 25;
+	letter-spacing: 0.4px;
 }
 
 .contact img {
 	vertical-align: bottom;
-}
-
-.phone span {
-	font-family: Arial;
-	margin-left: -2px;
-	letter-spacing: 0.4px;
-	font-size: 18px;
+	padding: 1px 0 0 1px;
 }
 
 .authorize{
 	float: left;
-	margin: 17px 0 0 17px;
+	margin: 18px 0 0 17px;
 	width: 495px;
 	height: 25px;
 	border-radius: 3px;
@@ -54,7 +44,7 @@ header {
 
 .authorize form {
 	display: inline-block;
-	margin-left: 9px;
+	margin-left: 7px;
 }
 		
 .authorize input {
@@ -66,14 +56,22 @@ header {
 .authorize input[type="text"] {
 	display: inline-block;
 	width: 109px;
-	height: 12px;
 	font-size: 11px;
+	color: #97a2a6;
+	vertical-align: middle;
+	padding: 2px 0 2px 5px;
+	border-width: 0px;
+	border-radius: 2px;
 }
 
 .authorize input[type="password"] {
-	width: 112px;
+	width: 110px;
 	font-size: 11px;
-	height: 12px;
+	color: #97a2a6;
+	vertical-align: middle;
+	padding: 2px 0 2px 5px;
+	border-width: 0px;
+	border-radius: 2px;
 }
 
 .authorize input[type="submit"] {
@@ -81,11 +79,11 @@ header {
 	color: white;
 	border: none;
 	font-size: 11px;
-	padding-right: 6px;
+	padding-right: 5px;
 	border-right: 1px solid #d1d6dc;
 	line-height: 11px;
 	cursor: pointer;
-	margin-left: 3px;
+	margin-left: -2px;
 }
 
 .register {
@@ -106,7 +104,7 @@ header {
 	font-size: 12px;
 	text-decoration: none;
 	line-height: 14px;
-	border-bottom: 1px solid #bfbfbf;
+	border-bottom: 1px solid #677c8f;
 	margin: 0 0 5px 5px;
 }
 
@@ -129,7 +127,7 @@ header nav a {
 }
 
 .logo {
-	margin-top: 7px;
+	margin-top: 10px;
 }
 
 .hor_menu {
@@ -140,6 +138,7 @@ header nav a {
 	width: 909px;
 	border: 1px solid #0d1642;
 	box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.75);
+	margin-top: 3px;
 }
 
 .hor_menu ul {
@@ -185,7 +184,7 @@ header nav a {
 .cart {
 	float: right;
 	font-size: 11px;
-	margin-top: -2px;
+	margin: -2px 14px 0 0;
 }
 
 .cart a {
@@ -201,12 +200,13 @@ header nav a {
 
 .cart a span {
 	color: #0d5a8f;
-	margin: 0 11px 0 -2px;
+	vertical-align: middle;
 	font-size: 12px;
+	font-family: Arial;
 }
 
 .bigspace {
-	margin-left: 5px;
+	padding-left: 10px;
 }
 
 .form1 {
@@ -310,6 +310,9 @@ header nav a {
 	text-decoration: none;
 	font-size: 13px;
 	margin-left: -6px;
+	display: block;
+	height: 24px;
+	vertical-align: middle;
 }
 
 .small_li a:hover {
@@ -318,6 +321,14 @@ header nav a {
 	color: #0c3256;
 	text-decoration: underline;
 	font-size: 14px;
+	font-family: Arial;
+	vertical-align: middle;
+}
+
+.small_li:hover{
+	list-style-image: url(../img/small.png);
+	list-style-position: inside;
+	margin-left: 41px;
 }
 
 .circle {
