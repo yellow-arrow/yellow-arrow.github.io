@@ -303,6 +303,7 @@ header nav a {
 	list-style-type: circle;
 	margin-bottom: 1px;
 	margin-top: 1px;
+	list-style-position: outside;
 }
 
 .small_li a {
@@ -327,8 +328,8 @@ header nav a {
 
 .small_li:hover{
 	list-style-image: url(../img/small.png);
-	list-style-position: inside;
-	margin-left: 41px;
+	list-style-position: outside;
+	margin-left: 49px;
 }
 
 .circle {
@@ -350,19 +351,24 @@ header nav a {
 		
 section {
 	float: left;
+	margin-left: 23px;
 }
 		
-section div {
+section .mode1,
+section .mode2,
+section .mode3 {
 	float: left;
+	height: 156px;
 	width: 138px;
-	margin: 15px 7px 9px 0px;
+	margin: 0 29px 9px 0px;
 }
-		
+
 section h1 {
 	font-size: 15px;
 	color: #206988;
 	text-align: center;
 	line-height: 15px;
+	font-weight: bold;
 }
 		
 section h2 {
@@ -380,15 +386,41 @@ figcaption {
 	color: #114165;
 	font-weight: bold;
 	font-style: italic;
-	margin-top: -5px;
+	margin-top: 3px;
+	margin-right: 7px;
 }
 
+.mode1 img {
+	margin-right: 5px;
+}
+	
 figcaption span {
 	font-size: 12px;
 }
 
+section .mode3 {
+	margin-right: 0;
+}
+
+.row1 {
+	margin-top: 15px;
+}
+
+.row2,
+.row3 {
+	margin-top: 36px;
+}
+
+.row3 {
+	margin-bottom: 23px;
+}
+
+.mode1 {
+	
+}
+
 .tire123 {
-	width: 138px;
+	width: 136px;
 	height: 128px;
 	background: white;
 	border: 1px solid #b0b9bc;
@@ -492,14 +524,15 @@ aside form div {
 }
 		
 .tiresbrands {
-	margin-top: 27px;
-	margin-left: 117px;
-	margin-bottom: 17px;
+	margin-top: 32px;
+	margin-left: 100px;
+	margin-bottom: 19px;
 }
 		
 .tiresbrands li {
 	display: inline-block;
 	margin-left: 11px;
+	vertical-align: top;
 }
 		
 footer {
