@@ -7,6 +7,10 @@ for (var i = 0; i <= 4; i++) {
 
 var yourName = prompt('Enter your name','');
 
+if (typeof yourName == null || yourName.length == 0) {
+  alert('Пользователь не найден');
+}
+
 for (var j = 0; j <= 4; j++) {
   if (userNames[j] === yourName){
 	found = yourName;
