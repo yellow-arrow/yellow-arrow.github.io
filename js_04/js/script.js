@@ -34,7 +34,6 @@ var GeneratePage = {
         this.jsForm.classList.add('quiz');
         this.jsForm.setAttribute('method','POST');
         this.jsForm.setAttribute('id','form1');
-        this.jsForm.setAttribute('action','#');
         this.jsDiv.appendChild(this.jsForm);
         //form inserted to the div
     },
