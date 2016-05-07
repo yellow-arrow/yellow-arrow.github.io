@@ -11,8 +11,11 @@ var s=0;
 
 function erase(){
     clearInterval(tm);
+    h=0;
+    m=0;
+    s=0;
     hSpan.innerHTML='00:00:00';
-    btn.value='cont.';
+    btn.value='start';
 };
 
 function to_start(){
