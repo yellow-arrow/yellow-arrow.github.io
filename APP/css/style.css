@@ -1,0 +1,15 @@
+.wrapper {
+    margin: 0 auto;
+    height: 700px;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+}
+
+.touchslider-item
+.touchslider-demo {
+    height: 500px;
+    overflow: hidden;
+}
