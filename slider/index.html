@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+	*{
+	margin:0;
+	padding:0;
+	}
+	div#slideshow{
+	width:1000px;
+	height:600px;
+	position:relative;
+	}
+	img#big{
+	position:absolute;
+	z-index:0;
+	width:1000px;
+	height:600px;
+		}
+	#left{
+	position:absolute;
+	left:0;
+	top:250px;
+	width:100px;
+	height:100px;
+	z-index:10;
+	
+	}
+	#left:hover{
+	background-image:url(img/left.png);
+	}
+	#right{
+	position:absolute;
+	right:0;
+	top:250px;
+	width:100px;
+	height:100px;
+	z-index:20;
+	
+	}
+	#right:hover{
+	background-image:url(img/right.png);
+	}
+	form{
+	position:absolute;
+	z-index:20;
+	margin-top:-100px;
+	margin-left:800px;
+	}
+	div.sm{
+	top:500px;
+	left:800px;
+	width:100px;
+	height:60px;
+	position:absolute;
+	z-index:25;
+	}
+	#small{
+	width:100px;
+	height:60px;
+	position:absolute;
+	z-index:25;
+	top:500px;
+	left:800px;
+	}
+	
+	</style>
+	<script>
+	window.onload=function(){
+	var df=document.forms.f1;	
+	var i=0;
+	var pic=['img/big01.jpg','img/big02.jpg','img/big03.jpg','img/big04.jpg','img/big05.jpg'];
+	
+	document.getElementById('left').onclick=function(){
+	i--;
+	if(i<0) i=4;
+	document.getElementById('big').src=pic[i];
+	document.getElementById('c'+i).checked=true;//works
+	}
+	
+	document.getElementById('right').onclick=function(){
+	i++;
+	if(i>4) i=0;
+	document.getElementById('big').src=pic[i];
+	document.getElementById('c'+i).checked=true;//works
+	}
+	
+	document.getElementById('c'+i).checked=function(){
+	document.getElementById('big').src=pic[i];
+	}
+	
+	
+	}
+	
+	
+	</script>
+</head>
+<body>
+<div id="slideshow">
+	<img id="big" src="img/big01.jpg">
+	<div id="left"></div>
+	<div id="right"></div>
+	<br>
+</div>
+
+<form name="f1">
+<input type="radio" name="switch" id="c0" value="ch0"/> 
+<input type="radio" name="switch" id="c1" value="ch1"/>
+<input type="radio" name="switch" id="c2" value="ch2"/>
+<input type="radio" name="switch" id="c3" value="ch3"/>
+<input type="radio" name="switch" id="c4" value="ch4"/>
+</form>
+
+
+</body>
+</html>
