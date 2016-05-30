@@ -1,6 +1,11 @@
 .wrapper {
     margin: 0 auto;
     height: 700px;
+    width: 500px;
+}
+
+a {
+    cursor: pointer;
 }
 
 img {
@@ -8,8 +13,19 @@ img {
     height: 500px;
 }
 
-.touchslider-item
+.touchslider-viewport,
+.touchslider-item,
 .touchslider-demo {
     height: 500px;
     overflow: hidden;
+    margin: 0 auto;
+}
+
+.touchslider-item {
+    display: inline;
+}
+
+.nav {
+    margin: 0 auto;
+    text-align: center;
 }
